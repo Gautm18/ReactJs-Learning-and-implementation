@@ -1,6 +1,9 @@
-const ChildA = () => {
+const ChildA = (handleCount) => {
     return (
-        <>hello childA</>
+        <>
+        <div>hello child</div>
+        <button onClick={handleCount()}>+</button>
+        </>
     )
 }
 
