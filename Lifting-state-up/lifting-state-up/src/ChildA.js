@@ -1,8 +1,8 @@
-const ChildA = (handleCount) => {
+const ChildA = ({setCount, count}) => {
     return (
         <>
         <div>hello child</div>
-        <button onClick={handleCount()}>+</button>
+        <button onClick={()=>setCount(prev=> prev+1)}>+</button>
         </>
     )
 }

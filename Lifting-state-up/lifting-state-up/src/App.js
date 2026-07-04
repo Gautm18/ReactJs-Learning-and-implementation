@@ -9,7 +9,7 @@ function App() {
   return (
     <div style={{display:"flex", flexDirection:"column"}}>
     <div> hello world</div>
-     <ChildA handleCount={setCount}/>
+     <ChildA setCount={setCount} count={count}/>
      <ChildB count={count}/>
     </div>
   );
